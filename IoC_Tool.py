@@ -5,7 +5,7 @@ import json
 # URLScan class for interacting with the urlscan.io API
 class URLScan:
     def __init__(self):
-        self.apikey = "fbdea673-aa27-4d64-891e-f12287d7b9b0"   # Please enter your own API
+        self.apikey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"   # Please enter your own API
         self.headers = {'API-Key': self.apikey, 'Content-Type': 'application/json'}
     def scan_url(self, url):
         # Scan a URL using urlscan.io API
@@ -32,7 +32,7 @@ class AbuseIPDB:
 
         headers = {
             'Accept': 'application/json',
-            'Key': '1965b5860ddac5550566add3208bd05dc18768512e92c6cdc4dbe22ede79d394e8d0811c93973ef2' # Please enter your own API
+            'Key': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' # Please enter your own API
         }
 
         response = requests.request(method='GET', url=url, headers=headers, params=querystring)
@@ -48,7 +48,7 @@ class VirusTotal:            #
 
         headers = {
             "accept": "application/json",
-            "x-apikey": "5c2f2c0e4f1a1962f68d33d46784a9d700a105c397c3d067e28ab367dd54f1e5" # Please enter your own API
+            "x-apikey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # Please enter your own API
         }
 
         response = requests.get(url, headers=headers)
